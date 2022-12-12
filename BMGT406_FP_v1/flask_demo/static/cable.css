@@ -1,0 +1,82 @@
+body {font-family: arial, helvetica, sans-serif;
+   font-size: 73%;
+   color: black;
+   font-weight: normal;
+}
+
+h1 {
+   color: black;
+   font-family: "Times New Roman";
+}
+
+#header img {
+   position: relative;
+   left: 32em;
+   top: -9em;
+}
+
+#searchBoxArea {
+   margin-top: 1em;
+   background-color: #C3D9FF;
+   padding: 1.5em;
+   border: double;
+}
+
+fieldset {
+   border-width: thin;
+}
+
+#wholeForm {
+   margin-top: -9em;
+   border: double;
+   background-image: url(images/gradientImg.jpg);
+   background-repeat: repeat-y;
+}
+
+#customerInformation {
+   padding-top: 1em;
+   margin: 1em;
+   border-color: gray;
+}
+
+#customerInformation legend {
+   font-size: 1.5em;
+}
+
+#orderInformation {
+   margin: 1em;
+   border-color: gray;
+}
+
+#mainLegend {
+   font-size: 1.5em;
+}
+
+#orderInformation fieldset {
+   margin-top: 1em;
+   border-color: gray;
+}
+
+.creditCardField {
+   width: 2.5em;
+}
+
+#month {
+   width: 1.25em;
+}
+
+#year {
+   width: 2.5em;
+}
+
+#buttons {
+   border: none;
+}
+
+legend {
+   border-width: thin;
+}
+
+#validxhtml10Img  {
+    border-style: hidden;
+}

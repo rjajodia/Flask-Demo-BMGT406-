@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}
+Insert To a Table
+{% endblock %}
+
+{%block article %}
+	<!-- DO NOT EDIT ABOVE THIS LINE -->
+	{% if success %}
+	<div>
+		<fieldset><legend>List Users</legend>
+		<h1>Table</h1>
+		<table id="table" class="table table-striped">
+			<caption>User Information</caption>
+			<thead>
+				<tr>
+					{% for each_row in data %}
+						<td><strong>{{each_row}}</strong></td>
+					{% endfor %}
+				</tr>
+			</thead>
+			<tbody>						
+				{% for i in range(data.size) %}
+					<tr>
+						<td>{{data['firstname'][i]}}</td>
+						<td>{{data['lastname'][i]}}</td>
+						<td>{{data['email'][i]}}</td>
+						<td>{{data['password'][i]}}</td>
+					</tr>
+				{% endfor %}	
+			</tbody>
+		</table>
+		<a href=\><input type="submit" value = "Main Menu"></a>
+	</div>
+	{% endif %}
+
+	<div class="form">
+		<h1>{{"Refine " if success}}List Users</h1>
+		<form action="/listUsers" method="POST">
+			<label>User Email Select</label>
+				<input type="text" name="useremail">
+				<input type="submit" name="submit" value="Submit" class="abtn">
+		</form>
+	</div>
+	<!-- DO NOT EDIT BELOW THIS LINE -->
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}
+Home
+{% endblock %}
+{%block article %}
+    <div>
+        <fieldset class="card-body border border-secondary">
+            <legend>UMCP Event Creation and Signup</legend>
+            <div class="container">
+                <div class="container">
+                    <img style="border-style: double;" src="{{url_for('static', filename='images/UMDAdministration.jpg')}}" width="400" height="200"
+                        alt="UMDAdministration Img" />
+                </div>
+                <div class="container">
+
+                    <a href="InsertUsers.html"><input type="submit" class="btn btn-primary" name="InsertUsers"
+                            value="Add a User" /></a>
+
+                    <a href="/listUsers"><input type="submit" class="btn btn-primary" name="ListUsers"
+                        value="List Users" /></a>
+
+                    <a href="InsertEvents.html"><input type="submit" class="btn btn-success" name="InsertEvents"
+                            value="Add an Event" /></a>
+
+                    <a href="ProcessListEvents.php"><input type="submit" class="btn btn-danger" name="ListEvents"
+                            value="List Events" /></a>
+
+
+
+                    <a href="SignupEvents.php"><input type="submit" class="btn btn-warning" name="event"
+                            value="Sign up For an Event" /></a>
+
+                    <a href="ProcessListSignups.php"><input type="submit" class="btn btn-info" name="ListSignups"
+                            value="List Signups" /></a>
+
+                    <a href="SignupEvents2.php"><input type="submit" class="btn btn-dark" name="event2"
+                            value="(Alt) Sign up For an Event" /></a>
+
+                    <a href="googleMapsAll.html"><input type="submit" class="btn btn-info" name="mapRequest"
+                            value="All Locations" /></a>
+
+                    <a href="ChooseLocationDisplayMap_LR.php"><input type="submit" class="btn btn-warning"
+                            name="DisplayOneLoc" value="One Location" /></a>
+
+                </div>
+            </div>
+
+        </fieldset>
+    </div>
+{% endblock %}
